@@ -10,3 +10,6 @@ commonLabels:
 
 resources:
   - ../../../apps/xsalgovic-patient-fe
+
+components:
+  - ../../../components/version-developers
