@@ -11,7 +11,7 @@ replacements:
          group: fe.milung.eu
          version: v1
          kind: WebComponent
-         name: xsalgovic-patient-fe
+         name: xsalgovic-patient-card
      fieldPaths:
          - spec.hash-suffix
    source:
