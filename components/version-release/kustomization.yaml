@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+- name: salgac/patient-fe
+  newName: salgac/patient-fe
+  newTag: 1.0.0  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+
+replacements:
+ - targets:
+   - select:
+         group: fe.milung.eu
+         version: v1
+         kind: WebComponent
+         name: xsalgovic-patient-fe
+     fieldPaths:
+         - spec.hash-suffix
+   source:
+     version: v1
+     kind: Deployment
+     name:  xsalgovic-patient-fe-deployment
+     fieldPath: spec.template.spec.containers.0.image
+     options:
+         delimiter: ':'
+         index: 1
