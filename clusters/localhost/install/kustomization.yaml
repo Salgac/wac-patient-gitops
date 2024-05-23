@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
   - ../../../apps/xsalgovic-patient-fe
+  - ../../../apps/xsalgovic-patient-be
 
 components:
   - ../../../components/version-developers
+  - https://github.com/Salgac/wac-patient-be//deployments/kustomize/components/mongodb
+
+patches:
+  - path: patches/patient-webapi.service.yaml

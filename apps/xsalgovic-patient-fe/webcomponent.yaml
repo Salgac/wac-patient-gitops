@@ -13,6 +13,9 @@ spec:
       path: xsalgovic-patient-card # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Karta pacienta # názov mikro aplikácie
       details: Zobrazí detail karty pacienta - xsalgovic
+      attributes:
+        - name: api-base
+          value: http://localhost:30081/api
   preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy:
     true # pre komponenty v rámci klastra, neprístupné na verejnej sieti
