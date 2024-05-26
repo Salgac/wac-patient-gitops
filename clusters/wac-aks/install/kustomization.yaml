@@ -9,6 +9,7 @@ commonLabels:
 
 resources:
  - ../../../apps/xsalgovic-patient-fe
+ - ../../../apps/xsalgovic-patient-be
 
 
 components:

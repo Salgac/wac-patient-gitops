@@ -3,7 +3,10 @@ kind: Component
 images:
 - name: salgac/patient-fe
   newName: salgac/patient-fe
-  newTag: 1.0.0  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  newTag: 1.1.0  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+- name: salgac/wac-patient-be
+  newName: salgac/wac-patient-be
+  newTag: 1.1.0
 
 replacements:
  - targets:
